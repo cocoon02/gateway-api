@@ -12,8 +12,6 @@ class DatasetSeeder extends Seeder
      */
     public function run(): void
     {
-        Dataset::factory()->count(20)->create([
-            'partner_context' => 'CRUK',
-        ]);
+        Dataset::factory()->count(10)->create();
     }
 }
